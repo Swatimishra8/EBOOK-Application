@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/parentViewJournal">
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:gravity="center"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!-- Body EditText -->
+    <EditText
+        android:id="@+id/editTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#888888"
+        android:hint="Write Something"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:maxLines="8"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#257"
+        android:layout_gravity="center_horizontal"
+        android:text="Save" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#257" />
+
+    <!-- List View -->
+    <TextView
+        android:id="@+id/textViewListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Saved Items:"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/listViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
